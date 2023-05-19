@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Controlling\Admin\Install;
 
-use phpOMS\DataStorage\Database\DatabasePool;
+use phpOMS\Application\ApplicationAbstract;
 
 /**
  * Navigation class.
@@ -36,8 +36,8 @@ class Navigation
      *
      * @since 1.0.0
      */
-    public static function install(string $path, DatabasePool $dbPool) : void
+    public static function install(ApplicationAbstract $app, string $path) : void
     {
-        \Modules\Navigation\Admin\Installer::installExternal($dbPool, ['path' => __DIR__ . '/Navigation.install.json']);
+        \Modules\Navigation\Admin\Installer::installExternal($app, ['path' => __DIR__ . '/Navigation.install.json']);
     }
 }
