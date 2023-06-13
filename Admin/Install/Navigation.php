@@ -29,8 +29,8 @@ class Navigation
     /**
      * Install navigation providing
      *
-     * @param string       $path   Module path
-     * @param DatabasePool $dbPool Database pool for database interaction
+     * @param ApplicationAbstract $app  Application
+     * @param string              $path Module path
      *
      * @return void
      *
