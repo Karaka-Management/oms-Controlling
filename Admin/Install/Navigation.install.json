@@ -7,7 +7,7 @@
         "name": "Controlling",
         "uri": null,
         "target": "self",
-        "icon": "fa fa-exclamation-triangle",
+        "icon": "warning",
         "order": 100,
         "from": "Controlling",
         "permission": { "permission": 2, "type": null, "element": null },
